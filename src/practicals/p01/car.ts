@@ -1,20 +1,21 @@
 export class Car {
-  brand: string = "";
-  model: string = "";
 
-  start(): void {
-    console.log(`${this.brand} ${this.model} is starting...`);
-  }
+    brand!: string;
+    model!: string;
 
-  accelerate(): void {
-    console.log(`${this.brand} ${this.model} is accelerating...`);
-  }
+    start(): void {
+        console.log(${this.brand} ${this.model} is starting...);
+    }
 
-  brake(): void {
-    console.log(`${this.brand} ${this.model} is braking...`);
-  }
+    accelerate(): void {
+        console.log(${this.brand} ${this.model} is accelerating...);
+    }
 
-  stop(): void {
-    console.log(`${this.brand} ${this.model} is stopping...`);
-  }
+    brake(): void {
+        console.log(${this.brand} ${this.model} is braking...);
+    }
+
+    stop(): void {
+        console.log(${this.brand} ${this.model} is stopping...);
+    }
 }

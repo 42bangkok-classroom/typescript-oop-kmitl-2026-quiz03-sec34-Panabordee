@@ -1,21 +1,20 @@
 export class Car {
+  public brand: string = "";
+  public model: string = "";
 
-    brand!: string;
-    model!: string;
+  public start(): void {
+    console.log(`${this.brand} ${this.model} is starting...`);
+  }
 
-    start(): void {
-        console.log('is starting...');
-    }
+  public accelerate(): void {
+    console.log(`${this.brand} ${this.model} is accelerating...`);
+  }
 
-    accelerate(): void {
-        console.log('is accelerating...');
-    }
+  public brake(): void {
+    console.log(`${this.brand} ${this.model} is braking...`);
+  }
 
-    brake(): void {
-        console.log('is braking...');
-    }
-
-    stop(): void {
-        console.log('is stopping...');
-    }
+  public stop(): void {
+    console.log(`${this.brand} ${this.model} is stopping...`);
+  }
 }

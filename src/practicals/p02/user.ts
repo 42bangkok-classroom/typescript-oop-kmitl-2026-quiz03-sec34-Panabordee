@@ -14,9 +14,6 @@ export class User {
   }
 
   public setAge(age: number): void {
-    if (age < 0) {
-      throw new Error("Age must be positive");
-    }
     this.age = age;
   }
 
@@ -25,6 +22,7 @@ export class User {
   }
 
   public getFullName(): string {
+    if (!this.firstname && !this.lastname) return "";
     return `${this.firstname} ${this.lastname}`;
   }
 }
